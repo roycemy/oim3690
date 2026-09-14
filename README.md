@@ -1,6 +1,15 @@
 # oim3690
 
-Course repository for OIM3690 (Web Development with AI) at Babson College.
+Royce Myers · OIM3690 Fall 2026 · Babson College
+
+Course repository for in-class exercises and weekly notes.
+
+## About this course
+
+1. AI-native
+2. Learn and build in public
+3. Hands-on, project-based learning
+4. Be creative
 
 ## Pages
 
