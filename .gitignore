@@ -1,0 +1,4 @@
+# Keep weekly notes in logs/*.md. Ignore raw log dumps only.
+*.log
+secrets.txt
+.DS_Store

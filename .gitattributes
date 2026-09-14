@@ -1,0 +1,5 @@
+* text=auto
+*.html text
+*.md text
+*.png binary
+*.jpg binary
