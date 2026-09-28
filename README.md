@@ -17,6 +17,10 @@ Course repository for in-class exercises and weekly notes.
 - [Hello](hello.html)
 - [About me](about-me.html)
 
+## Mini Project 1
+
+[Blackbox](https://github.com/roycemy/blackbox-agent-trust) — a trust layer for personal AI agents, built for Yash. [View the live site](https://roycemy.github.io/blackbox-agent-trust/).
+
 ## Weekly notes
 
 - [Week 1](logs/wk01.md)
