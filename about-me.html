@@ -3,58 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Royce Meyers</title>
-  <meta name="description" content="About Royce Meyers, a Babson College student in OIM3690 building sites with AI and actually reading the code.">
-  <meta property="og:title" content="About Royce Meyers">
+  <title>About Royce Myers</title>
+  <meta name="description" content="About Royce Myers, a Babson College student in OIM3690 building sites with AI and actually reading the code.">
+  <meta property="og:title" content="About Royce Myers">
   <meta property="og:description" content="Babson student, builder, OIM3690 course page.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="page">
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="hello.html">Hello</a>
-        <a href="about-me.html" aria-current="page">About</a>
-        <a href="index.html#week-3">Week 3</a>
-        <a href="index.html#week-4">Week 4</a>
-        <a href="https://github.com/roycemy">GitHub</a>
-      </nav>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="rail" aria-hidden="true">
+      <p class="rail-mark">RM</p>
+      <p class="rail-spine">OIM3690</p>
+      <span class="rail-dot"></span>
+    </aside>
 
-    <main>
-      <p class="kicker">OIM3690 · about-me.html</p>
-      <h1>About me</h1>
-      <p class="lede highlight">
-        I'm Royce Meyers, a student at Babson College. I already vibe-code
-        sites in Cursor. This class is the part where I have to explain the
-        HTML and CSS instead of just shipping whatever the agent dumped out.
-      </p>
+    <div class="canvas">
+      <header>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="hello.html">Hello</a>
+          <a href="about-me.html" aria-current="page">About</a>
+          <a href="index.html#week-3">Week 3</a>
+          <a href="index.html#week-4">Week 4</a>
+          <a href="https://github.com/roycemy">GitHub</a>
+        </nav>
+      </header>
 
-      <div class="photos">
-        <img src="images/headshot.png" alt="Royce Meyers GitHub profile photo" width="160">
-        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224f54?w=400" alt="College campus walkway with brick buildings and trees" width="160" title="A campus walk, not my dorm">
-      </div>
+      <main id="main">
+        <p class="kicker">OIM3690 · about-me.html</p>
+        <h1>About me</h1>
+        <p class="lede highlight">
+          I'm Royce Myers. Dallas, then Boston. Babson '27. I already ship sites in Cursor. This page exists because Checkpoint 2 wanted semantic HTML, a local photo, a photo from a URL, and CSS that lives in its own file.
+        </p>
 
-      <section id="academics">
-        <h2>What I'm doing here</h2>
-        <ul class="interests">
-          <li>Information management and entrepreneurship at <span class="babson">Babson</span></li>
-          <li>Building companies while I'm still in school</li>
-          <li>Learning enough HTML and CSS to catch AI when it lies</li>
-        </ul>
-      </section>
+        <div class="photos">
+          <img src="images/headshot.png" alt="Royce Myers GitHub profile photo" width="168" height="168">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400" alt="College campus walkway with brick buildings and trees" width="168" height="168" title="A campus walk, not my dorm">
+        </div>
 
-      <p class="actions">
-        <a class="button" href="index.html">Back to home</a>
-        <a href="https://github.com/roycemy">GitHub</a>
-      </p>
-    </main>
+        <section id="academics">
+          <h2>What I'm doing here</h2>
+          <ul class="interests">
+            <li>Information management and entrepreneurship at <span class="babson">Babson</span></li>
+            <li>Building companies while I'm still in school</li>
+            <li>Learning enough HTML and CSS to catch AI when it lies</li>
+          </ul>
+        </section>
 
-    <footer>
-      <p>Contact: <a href="https://github.com/roycemy">github.com/roycemy</a></p>
-      <p><small>OIM3690 Fall 2026</small></p>
-    </footer>
+        <p class="actions">
+          <a class="button" href="index.html">Back to home</a>
+          <a href="https://github.com/roycemy">GitHub</a>
+        </p>
+      </main>
+
+      <footer>
+        <p>Contact: <a href="https://github.com/roycemy">github.com/roycemy</a></p>
+        <p><small>OIM3690 Fall 2026</small></p>
+      </footer>
+    </div>
   </div>
 </body>
 </html>
