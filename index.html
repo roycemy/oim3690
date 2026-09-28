@@ -11,8 +11,11 @@
     <nav>
       <a href="index.html" aria-current="page">Home</a>
       <a href="hello.html">Hello</a>
+      <a href="about-me.html">About</a>
       <a href="#week-1">Week 1</a>
       <a href="#week-2">Week 2</a>
+      <a href="#week-3">Week 3</a>
+      <a href="#week-4">Week 4</a>
       <a href="https://github.com/roycemy">GitHub</a>
     </nav>
 
@@ -36,6 +39,7 @@
       <p class="actions">
         <a class="button" href="https://github.com/roycemy">Visit my GitHub profile</a>
         <a href="hello.html">Hello page</a>
+        <a href="about-me.html">About me</a>
       </p>
 
       <section class="notes" aria-labelledby="notes-heading">
@@ -83,6 +87,40 @@
 
           <h4>Working with AI this week</h4>
           <p>The Tuesday assignment was basically "stop vibe coding for a second." Find the line you don't understand and ask about that line, not "make it nicer." I did that instead of restyling it five times. Thursday we had to add tags I hadn't seen, then change one thing myself so I wasn't just accepting the dump. The first <code>index.html</code> it gave me worked. That's the trap. Working is not the same as I could explain it on a walkthrough.</p>
+        </article>
+
+        <article id="week-3">
+          <h3>Week 3 · 9/15 to 9/20</h3>
+          <p class="file-ref"><a href="logs/wk03.md">logs/wk03.md</a></p>
+
+          <h4>What I worked on</h4>
+          <p>Tuesday we finished HTML (tags with no closing tag, meta tags, semantic tags) and wrote the first CSS inside <code>about-me.html</code>. Then Thursday was selectors, cascade, and moving the CSS out of a style block into <code>css/styles.css</code>.</p>
+
+          <h4>What gave me trouble</h4>
+          <p>The browser just ignores a CSS typo. No error. If I misspell <code>background-color</code> the page stays ugly and I think the file didn't save. Relative paths too: once CSS lives in <code>css/styles.css</code>, the link has to match that folder.</p>
+
+          <h4>Something new I picked up</h4>
+          <p>Semantic tags are named boxes. Class selectors style a group. ID is for jumping to a section. When two rules fight, more specific wins, then whoever is written later. <code>#006644</code> is Babson green.</p>
+
+          <h4>Working with AI this week</h4>
+          <p>I had it generate <code>about-me.html</code> then I read it before committing. When I said use <code>css/styles.css</code> it still tried to invent <code>style.css</code> in a random folder.</p>
+        </article>
+
+        <article id="week-4">
+          <h3>Week 4 · 9/22 to 9/27</h3>
+          <p class="file-ref"><a href="logs/wk04.md">logs/wk04.md</a></p>
+
+          <h4>What I worked on</h4>
+          <p>Tuesday was interview → proposal → PRD → AGENTS.md before any code. Thursday was cascade, box model, Flexbox, Grid, responsive, DevTools Inspect. I made the homepage wrap on a phone.</p>
+
+          <h4>What gave me trouble</h4>
+          <p>Checkpoint 2 hit and I was missing <code>about-me.html</code>, <code>wk03.md</code>, and <code>wk04.md</code>. That's on me. Phone cannot open <code>127.0.0.1</code>.</p>
+
+          <h4>Something new I picked up</h4>
+          <p>Every element is a box. Flex is one direction, Grid is two. <code>@media</code> plus the viewport tag is how a page works on a phone. Inspect → line through a rule means it lost. <code>PRD.md</code> is the spec. <code>AGENTS.md</code> is the five rules so the agent doesn't sneak React onto a three-page site.</p>
+
+          <h4>Working with AI this week</h4>
+          <p>Write the plan before any code and hand the agent that plan. "Make it look good" is how you get the generic AI site. New chat when the job changes.</p>
         </article>
       </section>
     </main>
