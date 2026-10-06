@@ -16,6 +16,8 @@ Course repository for in-class exercises and weekly notes.
 - [Home](index.html)
 - [Hello](hello.html)
 - [About me](about-me.html)
+- [To-do](todo.html)
+- [Contact](contact.html)
 
 ## Mini Project 1
 
@@ -27,5 +29,6 @@ Course repository for in-class exercises and weekly notes.
 - [Week 2](logs/wk02.md)
 - [Week 3](logs/wk03.md)
 - [Week 4](logs/wk04.md)
+- [Week 5](logs/wk05.md)
 
 Personal site: [https://roycemy.github.io](https://roycemy.github.io)

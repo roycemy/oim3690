@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · OIM3690</title>
+  <meta name="description" content="Contact form for Royce Myers. It posts to the class echo page.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="rail" aria-hidden="true">
+      <p class="rail-mark">RM</p>
+      <p class="rail-spine">OIM3690</p>
+      <span class="rail-dot"></span>
+    </aside>
+
+    <div class="canvas">
+      <header>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="hello.html">Hello</a>
+          <a href="about-me.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="https://github.com/roycemy">GitHub</a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <p class="kicker">OIM3690 · contact.html</p>
+        <h1>Contact</h1>
+        <p class="lede">
+          Name, email, and a message. Submit sends it to the class echo page so I can see exactly what the server received.
+        </p>
+
+        <form class="contact-form" action="https://oim.zhili.dev/echo/view" method="post">
+          <label for="name">Name
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </label>
+          <label for="email">Email
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </label>
+          <label for="phone">Phone <span>(optional)</span>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+          </label>
+          <label for="message">Message
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </label>
+          <button class="button" type="submit">Send</button>
+        </form>
+      </main>
+
+      <footer>
+        <p>Posts to the OIM echo form. Nothing here is saved on this site.</p>
+        <p><small>OIM3690 Fall 2026</small></p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

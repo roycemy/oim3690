@@ -1,0 +1,44 @@
+body {
+  font-family: Georgia, serif;
+  margin: 2rem;
+  background: #f7f4ee;
+  color: #1c1a17;
+}
+
+main {
+  max-width: 32rem;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+  margin-bottom: 1rem;
+}
+
+label {
+  position: absolute;
+  left: -999px;
+}
+
+input {
+  flex: 1;
+  font: inherit;
+  padding: 0.4rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.4rem 0.7rem;
+}
+
+li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+li span {
+  flex: 1;
+}
