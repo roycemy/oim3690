@@ -24,6 +24,10 @@ Course repository for in-class exercises and weekly notes.
 
 [Blackbox](https://github.com/roycemy/blackbox-agent-trust) — a trust layer for personal AI agents, built for Yash. [View the live site](https://roycemy.github.io/blackbox-agent-trust/).
 
+## Mini Project 2
+
+[Dato](https://github.com/roycemy/Dato) — a browser tool that scans text or files for confidential data before you paste them into an AI tool, applies a policy you chose (Allow, Warn, Redact or Block), and keeps a local audit log. Plain HTML, CSS and JavaScript, saved in the browser only. [View the live site](https://roycemy.github.io/Dato/).
+
 ## Weekly notes
 
 - [Week 1](logs/wk01.md)
