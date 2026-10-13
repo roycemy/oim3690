@@ -42,3 +42,14 @@ li {
 li span {
   flex: 1;
 }
+
+.filters {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+
+.filters button[aria-pressed="true"] {
+  background: #1c1a17;
+  color: #f7f4ee;
+}

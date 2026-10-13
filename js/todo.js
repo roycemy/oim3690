@@ -1,16 +1,28 @@
 const form = document.querySelector("#todo-form");
 const input = document.querySelector("#todo-input");
 const list = document.querySelector("#todo-list");
+const filterButtons = document.querySelectorAll("[data-filter]");
 
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
+let filter = "all";
 
 function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+function visibleTodos() {
+  if (filter === "open") {
+    return todos.filter((todo) => !todo.done);
+  }
+  if (filter === "done") {
+    return todos.filter((todo) => todo.done);
+  }
+  return todos;
+}
+
 function render() {
   list.innerHTML = "";
-  todos.forEach((todo) => {
+  visibleTodos().forEach((todo) => {
     const item = document.createElement("li");
 
     const checkbox = document.createElement("input");
@@ -56,6 +68,16 @@ form.addEventListener("submit", (event) => {
   input.value = "";
   saveTodos();
   render();
+});
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filter = button.dataset.filter;
+    filterButtons.forEach((other) => {
+      other.setAttribute("aria-pressed", String(other === button));
+    });
+    render();
+  });
 });
 
 render();
