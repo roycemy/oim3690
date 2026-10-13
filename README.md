@@ -26,7 +26,7 @@ Course repository for in-class exercises and weekly notes.
 
 ## Mini Project 2
 
-[Dato](https://github.com/roycemy/Dato) — a browser tool that scans text or files for confidential data before you paste them into an AI tool, applies a policy you chose (Allow, Warn, Redact or Block), and keeps a local audit log. Plain HTML, CSS and JavaScript, saved in the browser only. [View the live site](https://roycemy.github.io/Dato/).
+[Dato](https://github.com/roycemy/ai-data-leak-firewall) — a browser tool that scans text or files for confidential data before you paste them into an AI tool, applies a policy you chose (Allow, Warn, Redact or Block), and keeps a local audit log. The site opens on a download for the Dato Chrome extension, which runs the same checks on ChatGPT, Claude, and Gemini. Plain HTML, CSS and JavaScript, saved in the browser only. [View the live site](https://roycemy.github.io/ai-data-leak-firewall/).
 
 ## Weekly notes
 
