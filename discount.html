@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Discount · OIM3690</title>
+  <style>
+    :root {
+      --bg: #14100c;
+      --raised: #1d1811;
+      --ink: #f3ece2;
+      --muted: #c4b6a2;
+      --accent: #d97757;
+      --line: #2b241b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Georgia, serif;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+    }
+    main {
+      width: min(100%, 28rem);
+      border: 1px solid var(--line);
+      background: var(--raised);
+      padding: 1.5rem;
+    }
+    h1 { margin: 0 0 0.4rem; font-size: 1.7rem; }
+    p { color: var(--muted); }
+    label {
+      display: grid;
+      gap: 0.35rem;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    input {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      color: var(--ink);
+      font: inherit;
+    }
+    input:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    button {
+      font: inherit;
+      padding: 0.6rem 1rem;
+      border: 0;
+      background: var(--ink);
+      color: var(--bg);
+      cursor: pointer;
+    }
+    button:hover { background: var(--accent); }
+    #result { min-height: 1.5rem; color: var(--ink); }
+    label.check { display: flex; align-items: center; gap: 0.5rem; }
+    label.check input { width: auto; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.3rem 0; }
+    .row { display: flex; gap: 0.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Member discount</h1>
+    <p>$100 or more earns a discount, and so does being a member. Both earns the most.</p>
+
+    <label for="total">Cart total
+      <input id="total" type="number" inputmode="decimal" min="0" value="150">
+    </label>
+    <label class="check" for="member">
+      <input id="member" type="checkbox"> Member
+    </label>
+    <button id="apply" type="button">Get discount</button>
+    <p id="result"></p>
+  </main>
+
+  <script>
+    // 20 if total >= 100 and member, 10 if only one of the two, 0 otherwise
+    function getDiscount(total, isMember) {
+      if (total >= 100 && isMember) {
+        return 20;
+      } else if (total >= 100 || isMember) {
+        return 10;
+      } else {
+        return 0;
+      }
+    }
+
+    const totalInput = document.querySelector("#total");
+    const memberInput = document.querySelector("#member");
+    const result = document.querySelector("#result");
+
+    function showDiscount() {
+      const total = Number(totalInput.value);
+      const discount = getDiscount(total, memberInput.checked);
+      result.textContent = "Discount: " + discount + "%";
+    }
+
+    document.querySelector("#apply").addEventListener("click", showDiscount);
+    totalInput.addEventListener("input", showDiscount);
+    memberInput.addEventListener("change", showDiscount);
+
+    showDiscount();
+  </script>
+</body>
+</html>

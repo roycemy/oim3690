@@ -19,6 +19,8 @@ Course repository for in-class exercises and weekly notes.
 - [To-do](todo.html)
 - [Contact](contact.html)
 - [Converter](converter.html)
+- [Member discount](discount.html)
+- [Playlist](playlist.html)
 
 ## Mini Project 1
 
