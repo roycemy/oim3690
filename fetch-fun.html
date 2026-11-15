@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Something Fun</title>
+</head>
+<body>
+  <h1>Fetch Something Fun</h1>
+  <button id="go">Surprise me</button>
+  <p id="output"></p>
+  <img id="dog" alt="A random dog" hidden width="300">
+
+  <script>
+    // Each API: where to fetch, and how to read the one field I need.
+    const apis = [
+      {
+        name: 'Joke',
+        url: 'https://v2.jokeapi.dev/joke/Programming?type=single&safe-mode',
+        read: data => data.joke
+      },
+      {
+        name: 'Dog',
+        url: 'https://dog.ceo/api/breeds/image/random',
+        read: data => data.message // an image URL
+      }
+    ];
+
+    const goBtn = document.querySelector('#go');
+    const output = document.querySelector('#output');
+    const dog = document.querySelector('#dog');
+
+    goBtn.addEventListener('click', async () => {
+      // "Surprise me": pick one of the two APIs at random.
+      const api = apis[Math.floor(Math.random() * apis.length)];
+      goBtn.disabled = true;
+      output.textContent = 'Loading...';
+      dog.hidden = true;
+      try {
+        // First await: wait for the response to arrive.
+        const response = await fetch(api.url);
+        // A 404 or 500 is still a response, so fetch will not throw. Check it.
+        if (!response.ok) {
+          throw new Error(`Request failed: ${response.status}`);
+        }
+        // Second await: wait for the body to be read as JSON.
+        const data = await response.json();
+        const value = api.read(data);
+        if (api.name === 'Dog') {
+          output.textContent = 'A random dog:';
+          dog.src = value;
+          dog.hidden = false;
+        } else {
+          // textContent shows the text as plain text, never as HTML.
+          output.textContent = value;
+        }
+      } catch (error) {
+        // Runs when the request cannot be made at all (for example, offline).
+        output.textContent = 'Something went wrong: ' + error.message;
+      } finally {
+        goBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

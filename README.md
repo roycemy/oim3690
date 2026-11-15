@@ -21,6 +21,9 @@ Course repository for in-class exercises and weekly notes.
 - [Converter](converter.html)
 - [Member discount](discount.html)
 - [Playlist](playlist.html)
+- [Message Board](post-message.html)
+- [Fetch Something Fun](fetch-fun.html)
+- [Ask AI](ai-chat.html) — calls `api/ask.js`, so it only works on the Vercel deployment, not GitHub Pages
 
 ## Mini Project 1
 
