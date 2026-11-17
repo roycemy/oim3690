@@ -4,6 +4,8 @@ Royce Myers · OIM3690 Fall 2026 · Babson College
 
 Course repository for in-class exercises and weekly notes.
 
+Class: OIM3690-01, Tuesday and Thursday, 3:00 PM to 4:30 PM ET, Gerber Hall 102.
+
 ## About this course
 
 1. AI-native
@@ -48,6 +50,6 @@ Course repository for in-class exercises and weekly notes.
 - [Week 7](logs/wk07.md)
 - [Week 8](logs/wk08.md)
 - [Week 9](logs/wk09.md)
-- [Week 11](logs/wk11.md)
+- [Week 10](logs/wk10.md)
 
 Personal site: [https://roycemy.github.io](https://roycemy.github.io)
