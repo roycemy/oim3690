@@ -44,5 +44,6 @@ Course repository for in-class exercises and weekly notes.
 - [Week 7](logs/wk07.md)
 - [Week 8](logs/wk08.md)
 - [Week 9](logs/wk09.md)
+- [Week 12](logs/wk12.md)
 
 Personal site: [https://roycemy.github.io](https://roycemy.github.io)
