@@ -25,7 +25,7 @@ Class: OIM3690-01, Tuesday and Thursday, 3:00 PM to 4:30 PM ET, Gerber Hall 102.
 - [Playlist](playlist.html)
 - [Message Board](post-message.html)
 - [Fetch Something Fun](fetch-fun.html)
-- [Ask AI](ai-chat.html) — calls `api/ask.js`, so it only works on the Vercel deployment, not GitHub Pages
+- [Ask AI](https://oim3690-vert.vercel.app/ai-chat.html) — calls `api/ask.js`, so it only works on the Vercel deployment, not GitHub Pages
 
 ## Mini Project 1
 
